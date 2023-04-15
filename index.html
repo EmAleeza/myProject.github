@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapSton Project</title>
+
+    <!-- ------------1. Owl carousel css------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <!-- ------------1. Owl carousel Theme.css------------- -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+    <!-- ------------Bootstrap css link------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- ------------CSS Stylesheet link------------- -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- ------------Fa link------------- -->
+    <script src="https://kit.fontawesome.com/7c914e0776.js"></script>
+</head>
+
+<body>
+    <div class="circle-small d-none d-md-block"></div>
+    <!------Navbar------>
+    <nav class="navbar py-1  sticky-lg-top navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid ">
+            <!------Nav-logo------>
+            <a class="navbar-brand position-relative ms-lg-5  mt-0 mb-0" href="#"><img src="./imgs/logo.png"
+                    height="40px" alt=""></a>
+
+            <!------Toggle-button------>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <!------Nav-Items------>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  ms-auto  me-auto  mb-0 mb-lg-0 mt-0 ">
+
+                    <!--------Drop-Down-Menu-0------------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link catagory   fs-5 rounded-3 px-3 text-primary fw-bold  "
+                            href="#">Catagories</a>                       
+
+                    <!--------Drop-Down-Menu-1------------->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5 fw-bold" href="#">Pages</a>
+                        <ul class="dropdown-menu dp-box  border-0 shadow ">
+                            <li class="dropend "><a class="dropdown-item  " href="#">Course <i
+                                        class="fa-solid fa-ellipsis float-end  mb-3 fs-4  "></i></a>
+                                <ul class="dropdown-menu border-0 shadow ">
+
+                                    <li> <a class="dropdown-item" href="./courseslistclassic.html">Course List
+                                            Classic</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="dropdown-item" href="./instructorlist.html">Instructor List</a></li>                   
+   
+
+                            <!-------------DROPDOWN-SUB-MENU 6--------------->
+
+                            <li class="dropend"><a class="dropdown-item " href="">Authenciation <i
+                                        class="fa-solid fa-ellipsis  float-end mb-3 fs-4 "></i></a>
+                                <ul class="dropdown-menu border-0 shadow">                                   
+                                    <li><a class="dropdown-item" href="./forgotpassward.html">Forgot Password</a></li>
+                                </ul>
+                            </li>
+                        </ul>      
+                        
+                         <!--------Drop-Down-Menu-2------------->
+                    <li class="nav-item  ">
+                        <a class="nav-link fs-5 fw-bold" href="./courseslistclassic.html">Course List
+                               Classic</a>                     
+                       </li>
+                    <!---------------DROPDOWN-MENU 3----------------->
+
+
+                    <li class="nav-item ">
+                        <a class="nav-link fs-5 fw-bold" href="./instructorlist.html">Instructor List</a>
+                    <!---------------DROPDOWN-MENU 4----------------->
+                                           <li class="nav-item dropdown">
+                                            <a class="nav-link fs-5 fw-bold" href="./forgotpassward.html">Forgot Password</a>
+                    </li>
+                    <!---------------DROPDOWN-MENU 5----------------->
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link   fw-bold text-secondary" href="#" id="navbarScrollingDropdown">
+                            <i class="fa-solid fw-bold fs-3 fa-ellipsis  ms-1"></i>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <!------Search-Bar------>
+                <form>
+                    <input class="form-control me-2 mt-0 mb-0 " type="search" placeholder="Search">
+                </form>
+                <a class="nav-link " href="#">
+                    <img class="rounded-circle  me-lg-5 " src="./imgs/end logo.png" height="60px" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!------Main-Banner------>
+    <div class="container ">
+        <div class="row mt-md-5 pt-md-5 g-5   ">
+            <div class="col-12 col-md-12 col-lg-6 col-xl-5 ">
+                <img src="./imgs/star.png " height="40px" width="40px"
+                    class="img-fluid d-none d-lg-block star-img position-absolute" alt="">
+                <h1 class="fw-bold text-dark hero-text mt-5 position-relative ">Limitless learning at your fingertips
+                    <span class="position-absolute top-75 start-50 d-md-none d-lg-inline translate-middle-x ">
+                        <svg width="330px" height="62.1px">
+                            <path class="fill-warning"
+                                d="m322.5 25.3c0 1.4 2.9 0.8 3.1 1.6 0.8 1.1-1.1 1.3-0.6 2.4 13.3 0.9 26.9 1.7 40.2 4-2.5 0.7-4.9 1.6-7.3 1.1-4-0.9-8.2-1-12.2-1.2-8.5-0.5-16.9-1.9-25.5-1.7h-3.1c2.6 0.6 4.8 0.4 5.7 2.2-7.3 0.4-14.1-0.8-21.2-1.1-0.2 0.6-0.5 1.2-0.8 1.8 21.3 0.7 42.5 1.6 64.3 4.6-4.2 1.6-7.7 1-10.8 0.8-6.8-0.5-13.5-1.3-20.3-1.9-0.9-0.1-2.3-0.1-2.9 0.2-2.2 1.6-4.3 0.6-7 0.4 1.4-1 2.5 0.5 3.9-0.8-5.6-1-10.7 0.6-15.9 0s-10.5-0.6-16.6-0.8c2 1.6 4.6 1.3 6.2 1.4 4.9 0 9.9 0.8 14.8 0.7 5.3-0.1 10.4 0.5 15.5 0.9 3.2 0.3 6.7-0.1 9.9-0.4 1.1-0.1 0.5 0.3 0.6 0.6 0.5 0.9 2.2 0.8 3.6 0.8 5.1-0.1 10.1 0.6 14.8 1.5 0.8 0.1 1.5 0 1.7 0.7 0 0.7-0.8 0.6-1.5 0.8-3.9 1.2-7.4-0.2-11.1-0.2-2 0-4.3-1.5-6 0.5-0.3 0.4-1.4 0.1-2.2-0.1-4.5-0.8-9.1-0.5-13.8-1.5-2.3-0.5-5.6 0.1-8.4 0.5-4 0.5-8-0.7-12.1-0.9-3.4-0.2-7.1-0.5-10.5-0.7-7.1-0.3-14.2-1.2-22.3-0.4 4.9 1.1 9.4 1.2 13.8 1.2 9.7 0 19.2 2.3 28.9 1.6 7.3 3.2 15.9 1.5 23.8 2.9 4.9 0.8 10.1 0.8 15.2 1.2 0.5 0 0.8 0.3 1.1 0.9-20-2.1-40.2-1.4-60.8-3 4.9 2.1 10.8-0.3 15.3 2.7-8 1.9-15.8-0.9-23.5-0.1 2.8 1.4 7.1 1.1 9.3 3.3 0.5 0.5 0.2 1.1-1.2 1.3 2.3 1 3.4-2.1 5.7-0.4 0.2-0.6 0.2-1 0.3-1.5 0.8-0.3 2 0.8 1.5 1.5-0.2 0.1 0 0.3 0 0.5 18.7 0.4 37.3 1.7 56.2 3.6-1.7 1.1-2.8 1.2-4.2 1.1-7.1-0.5-14.1-0.9-21.2-1.4-3.1-0.2-6.3-0.4-9.4-0.4-7.6-0.2-15-0.7-22.4-1-9-0.4-17.9-0.1-26.9-0.1-1.2 0-2.9-0.4-3.9 1 14.8 0.3 29.7 0.6 44.4 1.1 14.8 0.6 29.9 1.3 44.2 4.2-4.3 1-8.8 0.9-13 0.5-5.3-0.5-10.5-1.1-15.8-1.2-11.4-0.3-22.9-0.9-34.3-1.2-17.6-0.4-35.4-0.3-53.1-0.4-10.8-0.1-21.7-0.2-32.5 0-17.8 0.4-35.7 0.2-53.5 0.5-13.1 0.3-26.3 0.1-39.4 0.5-11.1 0.3-22.4 0.6-33.6 1-13.1 0.6-26.1 0.2-39.3 0.4-3.9 0.1-7.6 0.2-11.8-0.2 0.9-1.2 2.3-1.3 3.9-1.3 8.4 0.2 16.6-0.4 24.9-0.9 3.9-0.2 7.9-0.4 11.9 0.2 2.5 0.4 5.3-0.3 8-0.4 7.3-0.4 14.7-0.7 22-0.9 11.9-0.5 23.7-1.2 35.6-0.8 7.7 0.2 15.3-0.6 22.9-0.1 2.3 0.2 4.3-0.5 6.5-1h-17.6c-9.6 0-19-0.1-28.6 0-8 0.1-16.1 0.3-24 0.8-2.6 0.2-5.4 0.1-8.2 0.1-10.1 0.3-20.1 0.6-30.2 0.5-5.4 0-10.7-0.1-15.9 0.6-2.3 0.3-4-1.3-6.5-0.6 0.2 0.4 0.5 0.9 0.6 1.5-1.9 0-4 0.4-4.9-0.1-4.2-2.2-9.4-1.5-14.1-2.3-1.7-0.3-3.7-0.1-4.3-1.5-0.5-1.3 1.9-1.5 2.6-2.6-4.2-1.4-4.6-5-8.5-7.2-1.5 0.2-0.9 2.8-4.2 1.3 0.3 2.4 4.5 3.9 2.8 6.4-2.3 0.3-3.2-0.8-4.2-1.7-2.5-4-5.1-8.4-5.1-12.7 0.2-6.8 0.2-13.8 3.6-20.4 0.3-0.5 0.3-1 0.8-1.4 0.9-0.9 1.2-2.4 3.6-2.1 2.2 0.2 2.5 1.5 2.6 2.6 0.2 1.4 1.5 1.8 3.2 2.5 0.9-1.4 0.5-2.9 2.6-3.7 0.2-0.1 0.3-0.4 0.3-0.4-3.1-2.2 1.2-2.2 2.3-3.3-3.1-1.8-4-4.3-3.7-7-1.5-0.3-3.1-0.4-4.5 0-1.7 0.6-2.2-0.5-2.9-1 0.6-0.5 0.8-1.1 2.2-1.3 7.6-0.9 15.2-1.7 22.9-2 20-0.7 39.9-0.9 59.9-1 11.9-0.1 23.8 0.4 35.6 1.1 3.6 0.2 7.1-0.9 10.7-0.5 7.9 0.9 15.8 0.3 23.8 0.5 7.3 0.1 14.4-0.6 21.7-0.1 12.2 0.9 24.4 0.3 36.7 0.6 9.4 0.3 18.9 0.4 28.2 1 11.9 0.7 23.8 1.3 35.6 2 11.1 0.6 22.4 0.5 33.3 2 7.1 1 14.4 1.1 21.3 2.4 4 0.7 8.2 1.6 12.4 1.9 2.2 0.2 0.9 1 1.5 1.5-4-0.8-8-0.8-12.1-1.4-4.3-0.7-8.5-1-12.8 0.4-2.9 1-6.3 0.2-9.3-0.1-10.2-1.1-20.6-1.6-30.8-2.4-12.1-0.9-24.3-1.4-36.4-2.1-9.9-0.6-20-0.5-29.9-1-11.4-0.6-22.7 0-34.2-0.5-6.3-0.3-12.3-0.3-18.5-0.4-4.2-0.1-8.4 1.3-12.8 0.3 0.6 0.2 1.2 0.7 1.9 0.7 10.5 0 20.9 1.9 31.6 1.7 6.5-0.1 13.1 0.2 19.8 0.8 3.2 0.3 6.3-0.4 9.7-0.1 7.6 0.7 15.5 0.5 23 0.8 12.4 0.5 24.7 0.4 37.1 1.1 13.3 0.7 26.8 2.1 39.9 4.1 6.2 0.9 12.7 1.5 19.2 1.7 0.6 0 1.1 0.1 1.5 0.5-4.6 0.1-9.3 0-13.9-0.5-0.6 1.1 1.4 0.9 1.5 1.9-9.7 1.6-19.6-1.4-29.4-0.1 2.2 1.4 5.1 1 7.4 1 7.3 0.1 14.1 1.3 21.2 1.9 2.8 0.3 5.9 0 8.5 0.8 1.5 0.5 4.6-1.1 4.9 1.3 4-0.7 7.3 1.5 11.1 1.2 4-0.3 7.7 0.6 11.6 1.1 0.8 0.1 2.2 0.3 2.3 1.1 0.2 1-1.1 1.2-2 1.5-3.4 1-6.7-0.4-10.1-0.4-0.9 0-2-0.2-2.9-0.2-9.4 0.1-18.8-1.3-28.3-1.8-6-0.4-12.1-0.9-18.1-1.3 0 0.2 0 0.4-0.2 0.6 6.1 0.5 12.1 1.4 18.3 0.7z">
+                            </path>
+                        </svg>
+                    </span>
+                </h1>
+                <p class="text-muted fs-4 text-center mt-3 text-md-start display-6 ">Online learning and teaching
+                    marketplace
+                    with 5K+ courses & 10M
+                    students. Taught by experts to help you acquire new skills.</p>
+                <span class="fs-5 text-muted"> Learn with experts</span>
+                <span class="fs-5 text-muted">Learn with experts</span>
+                <span class="fs-5 text-muted">Learn with experts</span>
+
+                <div class="mt-3 text-center mb-5 mb-md-0 btns  text-lg-start">
+                    <!------Buttons------>
+                    <button class="btn btn-lg btn-danger  ">Get Started</button>
+                    <a href="#" class="btn ms-lg-4  ">
+                        <i
+                            class="fa-sharp btn-round rounded-circle  text-primary fa-solid fa-circle-play fs-1 display-1 pt-3  pt-md-2 "></i>
+                        <h6 class=" d-inline mb-1 fs-4 fw-bold ">Watch Vides</h6>
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 col-xl-7  ">
+                <div class="row ">
+                    <div class="col-12 mt-5 mt-xl-0 ">
+                        <img src="./imgs/hero img left img.png"
+                            class="d-none d-md-block position-absolute top-25 start-25 bg-white shadow rounded-3 px-2 py-2 "
+                            alt="">
+                        <figure class="position-absolute ">
+                            <svg width="550px" height="600px">
+                                <path class="fill-primary  "
+                                    d="M423.3,77.2c49.5,32.5,100.4,67.2,118.4,114.5s3.5,107.1-15.4,165.7c-18.7,58.6-41.8,116.1-84,148.6 c-42.5,32.8-104.2,40.2-163.8,37.3c-59.5-3.2-116.8-17.1-164.7-47.9c-48.3-30.6-87.2-78.2-102-131.6C-3,310.5,6.6,251,25.3,194.7 C43.6,138,70.7,84.3,114.1,49.5C157.2,14.8,216.7-1,270.8,6.4C324.8,14.2,373.4,44.7,423.3,77.2z">
+                                </path>
+                            </svg>
+                        </figure>
+                    </div>
+                </div>
+                <!-- ---AVATERS-BOX----->
+                <div class="avater-box bg-success d-none d-xl-block  text-center  ">
+                    <p class="text-light fw-bold  pt-4">Our daily new students</p>
+                    <div class="avaters ps-5  ">
+                        <span><img src="./imgs/end logo.png" width="50px" height="50px" class="rounded-circle"
+                                alt=""></span>
+                        <span><img src="./imgs/avater 2.png" width="50px" height="50px" class="rounded-circle"
+                                alt=""></span>
+                        <span><img src="./imgs/avater 3.png" width="50px" height="50px" class="rounded-circle"
+                                alt=""></span>
+                        <span><img src="./imgs/avater 4.png" width="50px" height="50px" class="rounded-circle"
+                                alt=""></span>
+                    </div>
+                </div>
+
+                <!-- --CONGRATULATION-BOX-- -->
+                <div class="c-box text-center d-none d-xl-flex shadow">
+                    <div class="bg-warning box rounded-circle mb-2 ms-3">
+                        <i class="fa fa-solid  fa-lg text-light fa-envelope"></i>
+                    </div>
+                    <h5 class="fw-bold text-light fs-4 c-mxg d-inline mt-4 ms-3">congratulation <i
+                            class="fa-sharp fa-solid fa-circle-check text-success   "></i></h5>
+                    <p class="fw-medium fs-5 text-white lh-2 app">Your Admission Completed</p>
+                </div>
+                <div class="mt-5 pt-5 mt-xl-0 pt-xl-0 ">
+                    <!------Hero-img------>
+                    <img src="./imgs/hero img.png"
+                        class="  mt-5 pt-5 position-relative  mt-xl-0 pt-xl-0 hero-img img-fluid " width="380px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!------Course-Sec------>
+    <div class="container">
+        <div class="row ms-auto me-auto g-3 row-m ">
+            <!------Box-1------->
+            <div class="col-12 box-1  col-md-5 col-lg-3 d-flex justify-content-center  rounded  ">
+                <i class="fa-sharp pt-4 fa-solid display-4 fa-display text-center text-warning "></i>
+                <span class="text-center">
+                    <h1 class="fw-bold  ps-5  pt-4 fs-3 ">10K</h1>
+                    <p class="fw-medium  ms-5 fw-bold">Online Courses</p>
+                </span>
+            </div>
+            <!------Box-2------->
+            <div class="col-12 box-2 col-md-5 offset-md-2 offset-lg-0 col-lg-3 d-flex justify-content-center rounded">
+                <i class="fa-sharp  fa-solid fa-user-tie text-center display-4 pt-4"></i>
+                <span class="text-center">
+                    <h1 class="fw-bold  ps-5  pt-4 fs-3 ">200+</h1>
+                    <p class="fw-medium  ms-5 fw-bold">Tutors</p>
+                </span>
+            </div>
+            <!------Box-3------->
+            <div class="col-12 box-3 col-md-5 col-lg-3 d-flex  justify-content-center  rounded">
+                <i class="fa-solid fa-user-graduate user-graduate pt-4 display-4"></i>
+                <span class="text-center">
+                    <h1 class="fw-bold  ps-5  pt-4 fs-3 ">60k+</h1>
+                    <p class="fw-medium  ms-5 fw-bold">Online students</p>
+                </span>
+            </div>
+            <!------Box-4------->
+            <div class="col-12 box-4 col-md-5 offset-md-2 offset-lg-0  col-lg-3 d-flex justify-content-center  rounded">
+                <i class="fa-solid fa-check pt-4 display-4"></i>
+                <span class="text-center ">
+                    <h1 class="fw-bold  ps-5  pt-4 fs-3 ">5k+</h1>
+                    <p class="fw-medium  ms-5 fw-bold">Certified Courses</p>
+                </span>
+            </div>
+        </div>
+
+        <!------Popular-Course------->
+        <div class="row ms-auto me-auto g-5  mt-3">
+            <div class="col-12  text-center ">
+                <h1 class="fw-bold display-2 fs-1">Most Popular Courses</h1>
+                <p class="text-muted fw-medium fs-5 display-2">Choose from hundreds of courses from specialist
+                    organizations</p>
+            </div>
+        </div>
+        <!------Popular-Course-DeatilS------->
+        <div class="row ms-auto me-auto rounded mb-3 d-flex py-3 justify-content-center row-bg">
+            <div class="col-6 col-md-2 pt-2">
+                <a class="btn btn-primary rounded btn-sm text-white display-5 fs-5">Web Design</a>
+            </div>
+            <div class="col-6 col-md-2 pt-2">
+                <a href="#" class="text-primary text-decoration-none display-6 fs-3">Development</a>
+            </div>
+            <div class="col-6 col-md-2 pt-2">
+                <a href="#" class="text-primary text-decoration-none display-6 fs-4 ms-md-4 ">Graphic Design</a>
+            </div>
+            <div class="col-6 col-md-2 pt-2">
+                <a href="#" class="text-primary text-decoration-none display-6 fs-3 ">Marketing</a>
+            </div>
+            <div class="col-12 col-md-2 pt-2"> <a href="#"
+                    class="text-primary text-decoration-none display-6 fs-3">Finance</a></div>
+        </div>
+
+
+        <!------Card-Section------->
+        <div class="row g-4 mt-md-3">
+
+            <!------Card-one------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card  shadow h-100 ">
+                    <img src="./imgs/02.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-solid text-danger float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">Graphic Design Masterclass
+                        </h1>
+                        <p class="card-text text-muted">Rooms oh fully taken by worse do Points afraid but may
+                            end
+                            Rooms </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-two------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow ">
+                    <img src="./imgs//03.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-regular float-end text-dark fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">Create a Design System in
+                            Figma
+                        </h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-three------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow ">
+                    <img src="./imgs/04.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline">Beginner</h5>
+                        <i class="fa-solid text-danger float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-1">Learn Invision</h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning  ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+
+                        <!-- -----CARD-FOOTER---- -->
+                        <div class="card-footer mt-5">
+                            <i class="fa-regular text-dark fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-four------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow ">
+                    <img src="./imgs/07.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-regular float-end text-dark fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">Deep Learning with
+                            React-Native
+                        </h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------Card-five------->
+        <div class="row g-4 mt-md-3">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow">
+                    <img src="./imgs/08.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-solid text-danger float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">Sketch from A to Z: for app
+                            designer</h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-six------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow h-100 ">
+                    <img src="./imgs//09.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-regular text-dark float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">JavaScript: Full
+                            Understanding
+                        </h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-seven------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow ">
+                    <img src="./imgs/11.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-solid text-danger float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-2">Build Responsive Websites
+                            with
+                            HTML</h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <div class="card-footer mt-3">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!------Card-eighth------->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card shadow h-100 ">
+                    <img src="./imgs/12.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title d-inline ">Beginner</h5>
+                        <i class="fa-regular text-dark float-end fa-heart"></i>
+                        <h1 class="card-subtitle fw-bold fs-4 text-dark mt-3 mb-1">Build Websites with CSS</h1>
+                        <p class="card-text">Rooms oh fully taken by worse do Points afraid but may end Rooms
+                        </p>
+                        <span class="text-warning ps-1">
+                            <i class="fa-solid  fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </span>
+                        <span class="ps-1 text-secondary">4.5/5.0</span>
+                        <!-- --------CARD-FOOTER -->
+                        <div class="card-footer mt-5">
+                            <i class="fa-regular text-danger fa-clock"></i>
+                            <span class="ps-1">12h 56m</span>
+                            <i class="fa-regular ms-2 fa-calendar-days"></i>
+                            <span class="ps-1">65 lectures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!------Instructor-Section------->
+        <div class="row ms-auto me-auto bg-primary  rounded  pt-4 pb-5 g-5 mt-5 ">
+            <!--Instructor-Section-SVG----->
+            <figure class="fill-white opacity-2  position-absolute start-75 top-25 translate-middle-y">
+                <svg width="141px" height="141px">
+                    <path
+                        d="M140.520,70.258 C140.520,109.064 109.062,140.519 70.258,140.519 C31.454,140.519 -0.004,109.064 -0.004,70.258 C-0.004,31.455 31.454,-0.003 70.258,-0.003 C109.062,-0.003 140.520,31.455 140.520,70.258 Z">
+                    </path>
+                </svg>
+            </figure>
+
+            <!--Instructor-Testimonial----->
+            <div class="col-12 col-md-6  ">
+                <h1 class="fw-bold text-white fs-1 ms-lg-5">Become an Instructor!</h1>
+                <p class="text-white fs-5 display-4 mt-1 ms-lg-5">Speedily say has suitable disposal add boy. On
+                    forth
+                    doubt
+                    miles of child. Exercise joy man children
+                    rejoiced. Yet uncommonly his ten who diminution astonished.</p>
+            </div>
+
+            <!--Instructor-button----->
+            <div class="col-12 col-md-6">
+                <a href="#"
+                    class="btn text-warning mt-md-5 float-lg-end me-lg-5   fw-bold btn-outline-warning btn-lg">Start
+                    Teaching
+                    Today</a>
+            </div>
+        </div>
+
+
+        <!------Popular-Course------->
+        <div class="row ms-auto me-auto g-5 mt-3">
+            <div class="col-12  text-center">
+                <h1 class="fw-bold display-2 fs-1">Our Trending Courses</h1>
+                <p class="text-muted fw-medium fs-5 display-1">Check out most 🔥 courses in the market</p>
+            </div>
+        </div>
+
+
+        <!------Slides-Section-Start------->
+        <div class="row g-3 mb-5 mt-4 ms-auto me-auto">
+            <div class="owl-carousel  ">
+                <div class="bg-white">
+                    <div class="card h-100">
+                        <img src="./imgs/slider 2.jpg" class="card-img-top" alt="">
+                        <!------Card-body------->
+                        <div class="card-body">
+                            <h5 class="card-title d-inline">Design</h5>
+                            <span class="badge bg-dark ms-lg-2  ">Biginner</span>
+                            <i class="fa float-end fa-bookmark"></i>
+                            <h1 class="card-subtitle slider-subtitle fw-bold fs-4 mt-3">The complete digital
+                                marketing
+                                course-8 in 1
+                            </h1>
+                            <div class="r-s mt-2 d-flex justify-content-between">
+                                <div class="rating">
+                                    <span class="text-warning">4.0</span><i class="fa text-warning ms-1 fa-star"></i>
+                                </div>
+                                <div class="students">
+                                    <span class="me-1">8000</span>
+                                    <span class="text-muted  ">(students)</span>
+                                </div>
+                            </div>
+                            <div class="time-calander mb-2 mt-2">
+                                <i class="fa-regular text-danger fa-clock"></i>
+                                <span class="ps-3">12h 56m</span>
+                                <i class="fa-regular ms-2 text-warning fa-calendar-days"></i>
+                                <span class="ps-3">65 lectures</span>
+                            </div>
+                            <!------Card-footer------->
+                            <div class="card-footer bg-white ">
+                                <div class="footer-img">
+                                    <img class="mt-2 rounded d-inline w-25 " src="./imgs/avater 2.png" alt="">
+                                    <span class="fw-bold">Frances Guerro </span>
+                                    <span class="float-end text-success fw-bold fs-2 mt-3">$200</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------Item-ends------->
+                <div class="item  bg-white ">
+                    <div class="card h-100">
+                        <img src="./imgs/slider 3.jpg" class="card-img-top" alt="">
+                        <!------Card-body------->
+                        <div class="card-body">
+                            <h5 class="card-title d-inline">Design</h5>
+                            <span class="badge bg-dark ms-2 ">Biginner</span>
+                            <i class="fa float-end fa-bookmark"></i>
+                            <h1 class="card-subtitle slider-subtitle fw-bold fs-4 mt-3">Time Management
+                                Mastery:Do More
+                                Stress Less
+                            </h1>
+                            <div class="r-s mt-2 d-flex justify-content-between">
+                                <div class="rating">
+                                    <span class="text-warning">4.0</span><i class="fa text-warning ms-1 fa-star"></i>
+                                </div>
+                                <div class="students">
+                                    <span class="me-1">8000</span><span class="text-muted ms-2">(students)</span>
+                                </div>
+                            </div>
+                            <div class="time-calander mb-2 mt-2">
+                                <i class="fa-regular text-danger fa-clock"></i>
+                                <span class="ps-3">12h 56m</span>
+                                <i class="fa-regular text-warning ms-2 fa-calendar-days"></i>
+                                <span class="ps-3">65 lectures</span>
+                            </div>
+                            <!------Card-footer------->
+                            <div class="card-footer bg-white ">
+                                <div class="footer-img">
+                                    <img class="mt-2 rounded d-inline w-25 " src="./imgs/avater 3.png" alt="">
+                                    <span class="fw-bold">Larry Lawsan </span>
+                                    <span class="float-end text-success fw-bold fs-2 mt-3">$500</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!------Item-ends------->
+                <div class="item bg-white">
+                    <div class="card h-100">
+                        <img src="./imgs/slider 4.jpg" class="card-img-top" alt="">
+                        <!------Card-body------->
+                        <div class="card-body">
+                            <h5 class="card-title d-inline">Design</h5>
+                            <span class="badge bg-dark ms-2 ">Biginner</span>
+                            <i class="fa float-end fa-bookmark"></i>
+                            <h1 class="card-subtitle slider-subtitle fw-bold fs-4 mt-3">Time Management
+                                Mastery:Do More
+                                Stress Less
+                            </h1>
+                            <div class="r-s mt-2 d-flex justify-content-between">
+                                <div class="rating">
+                                    <span class="text-warning">4.0</span><i class="fa text-warning ms-1 fa-star"></i>
+                                </div>
+                                <div class="students">
+                                    <span class="me-1">8000</span><span class="text-muted ms-2">(students)</span>
+                                </div>
+                            </div>
+                            <div class="time-calander mb-2 mt-2">
+                                <i class="fa-regular text-danger fa-clock"></i>
+                                <span class="ps-3">12h 56m</span>
+                                <i class="fa-regular text-warning ms-2 fa-calendar-days"></i>
+                                <span class="ps-3">65 lectures</span>
+                            </div>
+                            <!------Card-footer------->
+                            <div class="card-footer bg-white ">
+                                <div class="footer-img">
+                                    <img class="mt-2 rounded d-inline w-25 " src="./imgs/av1.jpg" alt="">
+                                    <span class="fw-bold">Lori Stevan </span>
+                                    <span class="float-end text-success fw-bold fs-2 mt-3">$200</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------Item-ends------->
+                <div class="item  bg-white">
+                    <div class="card h-100 ">
+                        <img src="./imgs/slider.jpg" class="card-img-top" alt="">
+                        <!------Card-body------->
+                        <div class="card-body ">
+                            <h5 class="card-title  d-inline">Design</h5>
+                            <span class="badge bg-dark  ">Biginner</span>
+                            <i class="fa me-2 fa-bookmark float-end"></i>
+                            <h1 class="card-subtitle slider-subtitle fw-bold fs-4 mt-3">Angular the complete
+                                guide(2021
+                                edition)
+                            </h1>
+                            <div class="r-s mt-2 d-flex justify-content-between">
+                                <div class="rating ">
+                                    <span class="text-warning">4.0</span><i class="fa text-warning ms-1 fa-star"></i>
+                                </div>
+                                <div class="students">
+                                    <span class="me-1">2000</span><span class="text-muted ms-2">(students)</span>
+                                </div>
+                            </div>
+                            <div class="time-calander mb-2 mt-2">
+                                <i class="fa-regular text-danger fa-clock"></i>
+                                <span class="ps-3">12h 56m</span>
+                                <i class="fa-regular text-warning ms-2 fa-calendar-days"></i>
+                                <span class="ps-3">65 lectures</span>
+                            </div>
+                            <!------Card-footer------->
+                            <div class="card-footer  bg-white ">
+                                <div class="footer-img ">
+                                    <img class=" rounded w-25 mt-2 d-inline img-fluid " src="./imgs/avater 4.png"
+                                        alt="">
+                                    <span class="fw-bold ">Frances Guerro </span>
+                                    <span class="float-end text-success fw-bold fs-2 mt-3">Free</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!------Item-ends------->
+            </div>
+        </div>
+    </div>
+
+
+    <!------Review-Section-Start------->
+
+    <section class="bg-light pt-5 pb-5">
+        <div class="container">
+            <div class="row ms-auto me-auto">
+                <!-------Left-Side------->
+                <div class="col-12 col-md-12  col-lg-7 order-2 order-lg-1">
+                    <div class="row mt-4 mt-md-5">
+                        <div class="col-12 col-md-7 mt-md-5">
+                            <div class="circle position-absolute start-25 "></div>
+                            <!-------cards-Left------->
+                            <div class="row mt-md-5">
+                                <div class="col-12 col-md-8 card-z shadow bg-white rounded-3  w-100 px-3  ">
+                                    <img src="./imgs/end logo.png" class=" c-1-img  img-fluid w-25 rounded-circle mt-4"
+                                        alt="">
+                                    <blockquote class=" text-muted  mt-4 fw-medium lh-1 fs-5">
+                                        <p> <i class="fa-solid fa-quote-left"></i>
+                                            Moonlight newspaper up its enjoyment agreeable depending. Timed
+                                            voice share
+                                            led
+                                            him to widen noisy young. At weddings believed laughing.
+                                            <i class="fa-solid fa-quote-right"></i>
+                                        </p>
+                                    </blockquote>
+                                    <!----RATING-PART------>
+                                    <span class="text-warning d-flex justify-content-center rating mt-4 ">
+                                        <i class="fa-solid  fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </span>
+                                    <!----NAME------>
+                                    <h4 class="fw-bold fs-5 text-center mb-5  ">Carolyn Ortiz</h4>
+                                </div>
+                            </div>
+
+                            <!----------Blue-Box---------->
+                            <div class="row d-none d-md-block mt-4 me-5  ">
+                                <div class="col-12 blue-box offset-md-5 rounded-3 bg-primary col-md-2  w-75 h-50">
+                                    <h1 class=" fw-bold text-white text-center pt-2">4.5/5.0</h1>
+                                    <!----RATING-PART------>
+                                    <span class="text-warning d-flex justify-content-center mb-3 ">
+                                        <i class="fa-solid  fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </span>
+                                    <p class="text-white mt-1  fs-6 fw-medium pb-3 text-center ">Based on 3265
+                                        ratings
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-------cards-right------->
+
+                        <div class="col-12 col-md-5">
+                            <div class="row">
+                                <div
+                                    class="col-12 ms-4 col-md-6 position-relative  py-2 h-25 w-75 d-none d-md-block shadow bg-white rounded-3">
+                                    <!------BADGE------>
+                                    <span
+                                        class="position-absolute rounded-circle start-100 shadow badge translate-middle w-25 h-25   bg-warning">
+                                        <i class="fa-solid  fs-3 pt-3 text-dark fa-shield"></i>
+                                    </span>
+
+                                    <!------HEADING------>
+                                    <h4 class="fs-6 fw-bold  text-center mt-2 mb-3">100+ Verified Mentors</h4>
+
+                                    <!-----PROFILES-PART------>
+
+                                    <!----PROFILE-ONE----->
+                                    <div class="profiles d-flex   ">
+                                        <img src="./imgs/av1.jpg" class="rounded-circle w-25" alt="">
+                                        <span class="meta-data ms-2  lh-1 ">
+                                            <h6 class="fw-bold  ">Lori Stevens</h6>
+                                            <p class="text-muted  ">Tutor of physic</p>
+                                        </span>
+                                    </div>
+
+                                    <!----PROFILE-TWO----->
+                                    <div class="profiles mt-3 d-flex   ">
+                                        <img src="./imgs/avater 3.png" class="rounded-circle w-25" alt="">
+                                        <span class="meta-data ms-2  lh-1 ">
+                                            <h6 class="fw-bold  ">Lori Stevens</h6>
+                                            <p class="text-muted  ">Tutor of physic</p>
+                                        </span>
+                                    </div>
+
+                                    <!----PROFILE-THREE----->
+                                    <div class="profiles mt-3 mb-3  d-flex  ">
+                                        <img src="./imgs/avater 2.png" class="rounded-circle w-25" alt="">
+                                        <span class="meta-data ms-2  lh-1 ">
+                                            <h6 class="fw-bold  ">Lori Stevens</h6>
+                                            <p class="text-muted  ">Tutor of physic</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-------Card-3------->
+                            <div class="row mt-4 ">
+                                <div class="col-12 col-md-11  bg-white  py-4 offset-md-1 mb-5 shadow rounded ">
+                                    <img src="./imgs/avater 3.png"
+                                        class="rounded-circle img-fluid c-3-img d-flex justify-content-center ms-auto me-auto  mb-2 "
+                                        width="100px" alt="">
+                                    <blockquote class=" text-center fs-6 text-muted mb-3 fw-medium ">
+                                        <p> <i class="fa-solid fa-quote-left"></i>
+                                            At weddings believed laughing although the Moonlight newspaper up
+                                            its
+                                            enjoyment
+                                            agreeable depending.
+                                            <i class="fa-solid fa-quote-right"></i>
+                                        </p>
+                                    </blockquote>
+                                    <!----RATING-PART------>
+                                    <span class="text-warning mb-2 d-flex justify-content-center  ">
+                                        <i class="fa-solid ms-4 fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </span>
+                                    <!----NAME------>
+                                    <h4 class="fw-bold fs-5 ms-4 text-center mb-5  ">Dennis Barrett</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-------Right-Side------->
+                <div class="col-12 col-md-12 col-lg-5 order-1 mt-lg-5 pt-lg-5 review-text ">
+                    <h1 class="fw-bolder text-dark student-feedback fs-1 mt-lg-5 pt-lg-5 ">Some valuable
+                        feedback from
+                        our
+                        students</h1>
+                    <p class="text-secondary text-center fw-medium mt-2 mb-2 text-md-start  fs-6 ">
+                        Supposing so be resolving breakfast am or
+                        perfectly.
+                        It drew a hill
+                        from me.Valley by oh twenty direct me so. Departure defective arranging rapturous did
+                        believe
+                        him all had supported. Family months lasted simple set nature vulgar him. Picture for
+                        attempt
+                        joy excited ten carried manners talking how.</p>
+                    <button class="btn fw-bold  mb-5 fs-6 btn-primary rounded-3">View Reviews</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!------Footer-Section------->
+    <div class="container">
+        <div class="row ms-auto me-auto">
+            <div class="col-12 col-md-12 col-lg-3 mt-3">
+                <div class="logo-imge">
+                    <img src="./imgs/logo.png" class="w-75 img-fluid" alt="">
+                </div>
+                <p class="mt-3 text-secondary">Eduport education theme, built specifically for the education
+                    centers
+                    which is dedicated to teaching and involve learners.</p>
+                <!-----SOCIAL-ICONS------->
+                <span class="mb-5 icons">
+                    <i class="fa-brands pt-2 text-primary shadow ms-3 fa-facebook-f"></i>
+                    <i class="fa-brands ms-2 pt-2  shadow   fa-instagram"></i>
+                    <i class="fa-brands ms-2  pt-2  shadow  fa-twitter"></i>
+                    <i class="fa-brands ms-2 pt-2  shadow fa-linkedin-in"></i>
+                </span>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 mt-3">
+                <h5 class="fw-bolder fs-2 ">Company</h5>
+                <ul class="nav flex-column ms-0 lh-1 ">
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">News and Blog</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Library</a></li>
+                    <li class="nav-item"><a class="nav-link  text-secondary" href="#">Career</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-6 col-lg-2 mt-md-3 mt-3">
+                <h5 class="fw-bolder fs-2 ">Community</h5>
+                <ul class="nav flex-column lh-1 ">
+                    <li class="nav-item"><a class="nav-link text-secondary fw-medium" href="#">Documentation</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Faq</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Forum</a></li>
+                    <li class="nav-item"><a class="nav-link text-secondary" href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-12 mt-md-3  col-lg-3">
+                <h5 class="fw-bolder fs-2 ">Teaching</h5>
+                <ul class="nav flex-column ms-0 lh-1  ">
+                    <li class="nav-item"><a class="nav-link  text-secondary fw-medium" href="#">Become a
+                            Teacher</a>
+                    </li>
+                    <li class="nav-item "><a class="nav-link  text-secondary" href="#">How to guide</a></li>
+                    <li class="nav-item "><a class="nav-link  text-secondary" href="#">Terms & conditions </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-12 mt-md-3 col-lg-2">
+                <h5 class="fw-bolder fs-2 ">Contact</h5>
+                <div class=" mt-3">
+                    <span class="text-secondary">Toll free:</span>
+                    <span class="ms-1 text-dark">+1234 568 963</span>
+                    <span class="d-block text-secondary ">(9:AM to 8:PM IST)</span>
+                    <span class="text-secondary d "> Email: </span>
+                    <span class="text-dark ms-0">example@gmail.com</span>
+                    <div class="row g-3 d-flex ">
+
+                        <!-----Google-Play------->
+                        <div class="col-6 col-md-2 col-lg-6">
+                            <a href="#">
+                                <img src=".//imgs/google play.png" width="110px" alt="">
+                            </a>
+                        </div>
+
+                        <!-----App-Store------->
+                        <div class="col-6 col-md-2 col-lg-6">
+                            <a href="#">
+                                <img src="./imgs/app store.png" class="mt-2 " width="87px" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-----Footer-Last------->
+            <div class="row border-top p-4 mt-3 ms-auto me-auto">
+                <div class="col-12 col-md-5">
+                    <p class="text-secondary fs-6 display-6 ">Copyrights &copy;2023 Webestica. All rights
+                        reserved. </p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <ul class="nav flex-row footer-ul  float-end ">
+                        <li class="nav-item dropup  "><a class="nav-link   dropdown-item dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#"><i class="fa-solid fa-globe"></i>
+                                Languages</a>
+                            <ul class="dropdown-menu border-0 shadow  ">
+                                <li> <a class="dropdown-item " href=""> <img class="w-25" src="./imgs/eng.svg" alt="">
+                                        English</a></li>
+                                <li> <a class="dropdown-item" href=""> <img class="w-25" src="./imgs/gr.svg" alt="">
+                                        German</a></li>
+                                <li> <a class="dropdown-item" href=""> <img class="w-25" src="./imgs/french.svg" alt="">
+                                        French</a></li>
+                            </ul>
+                        </li>
+                </div>
+
+                <div class="col-6 col-md-2 ">
+                    <a class="nav-link float-end   text-secondary" href="#">Term of
+                        use</a>
+                </div>
+                <div class="col-12 col-md-2">
+                    <a class="nav-link  text-secondary text-center text-lg-start" href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------Bootstrap js link------------- -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+<!-- --------Cdn-files----------->
+
+<!----------jquery-cdn----------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+   ></script>
+
+<!----------1-owl-carousel-min.js----------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+></script>
+
+<!----------Init carousel items----------->
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ["<span class='fa-solid fa-chevron-left'></span>", "<span class='fa-solid fa-chevron-right'></span>"],
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1000,       
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            }
+
+        }
+    })
+</script>
+</body>
+
+</html>
